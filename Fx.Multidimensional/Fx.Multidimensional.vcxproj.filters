@@ -15,10 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Multidimensional.Array.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Multidimensional.ixx">
+    <ClInclude Include="fx\multidimensional\array.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fx\multidimensional\array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
