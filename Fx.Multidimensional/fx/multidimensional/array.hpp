@@ -10,11 +10,13 @@ namespace fx
         class array
         {
         public:
-            using item = T;
+            using value_type = T;
+            using reference = value_type&;
+            using const_reference = const value_type&;
 
         private:
-            std::array<std::size_t, Dimensions> dimensions;
-            std::vector<T> data;
+            std::array<std::size_t, Dimensions> _dimensions;
+            std::vector<value_type> _data;
 
             template <typename... Indices>
             constexpr std::size_t calculate_index(Indices... indices) const;
@@ -24,10 +26,10 @@ namespace fx
             array(Sizes... sizes);
 
             template <typename... Indices>
-            T& operator()(Indices... indices);
+            reference operator()(Indices... indices);
 
             template <typename... Indices>
-            const T& operator()(Indices... indices) const;
+            const_reference operator()(Indices... indices) const;
 
             constexpr std::size_t shape(std::size_t dimension) const;
         };
