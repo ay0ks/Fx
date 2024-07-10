@@ -18,9 +18,21 @@
     <ClInclude Include="fx\multidimensional\array.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="fx\multidimensional\map.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fx\standard\vector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="fx\multidimensional\array.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\multidimensional\map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fx\standard\vector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

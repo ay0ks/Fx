@@ -20,9 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fx\multidimensional\array.hpp" />
+    <ClInclude Include="fx\multidimensional\map.hpp" />
+    <ClInclude Include="fx\standard\vector.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="fx\multidimensional\map.cpp" />
     <ClCompile Include="fx\multidimensional\array.cpp" />
+    <ClCompile Include="fx\standard\vector.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
