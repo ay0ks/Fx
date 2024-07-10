@@ -23,17 +23,14 @@ namespace fx
 			_vector(values)
 		{}
 
-		template<>
 		vector<std::string>::vector():
 			_vector{}
 		{}
 
-		template<>
 		vector<std::string>::vector(std::string value):
 			_vector{value}
 		{}
 
-		template<>
 		vector<std::string>::vector(std::string value, std::string delimiter):
 			_vector{}
 		{
@@ -41,7 +38,6 @@ namespace fx
 				_vector.push_back(std::string(std::string_view(part)));
 		}
 
-		template<>
 		vector<std::string>::vector(std::initializer_list<std::string> values):
 			_vector(values)
 		{}
